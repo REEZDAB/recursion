@@ -90,7 +90,7 @@ begin
   zeit := 0;
   if (ebene = n) then
   begin
-    if checkWeg(s, n) then
+    if checkWeg(s, n) and checkWeg(s, n) then
     begin
       zeitadd(s, zeit, von, zu);
       if zeitSchnell = 0 then
@@ -122,6 +122,7 @@ begin
   writeln('Carl van Vliet, Rekusion-Übung 2');
   reku('', 0, wegString, zeitSchnell);
   writeln('---');
+
   writeln('Schnellster Weg');
   writeln('Wegbeschreibung: ', WegB(wegString));
   writeln('Zeit in Min: ', zeitSchnell);
